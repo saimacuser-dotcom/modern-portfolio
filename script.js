@@ -21,12 +21,12 @@ message: form.message.value
 try{
 
 const response = await fetch(
-"http://localhost:5005/send-email",
+"/api/send-email",
 {
-method:"POST",
+method: "POST",
 
-headers:{
-"Content-Type":"application/json"
+headers: {
+"Content-Type": "application/json"
 },
 
 body: JSON.stringify(formData)
@@ -47,7 +47,7 @@ form.reset();
 }else{
 
 statusText.innerText =
-data.message;
+data.message || "Failed to send email.";
 
 statusText.style.color = "#ff4d4d";
 
