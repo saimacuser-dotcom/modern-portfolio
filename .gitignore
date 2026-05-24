@@ -1,2 +1,50 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Environment variables
 .env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files (Mac + Windows)
+.DS_Store
+Thumbs.db
+
+# Vercel build cache
+.vercel/
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+*.tmp
+
+# Coverage reports (if any testing added later)
+coverage/
+
+# Build outputs (if you ever add build tools)
+dist/
+build/
+
+# npm cache
+.npm/
+
+# Parcel / Vite / Next cache (future-proofing)
+.cache/
+.parcel-cache/
+.next/
+out/
+
+# Optional backups
+*.bak
+*.swp
